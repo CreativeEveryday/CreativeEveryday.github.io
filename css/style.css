@@ -112,7 +112,7 @@
     font-family: JSLight;
     font-size: 18px;
     color: #717070;
-    overflow: scroll;
+    overflow: scroll; /* overflow實現捲軸效果 */
     box-shadow: 0 6px 3px #dfdfe1;
     height: 300px; 
   }
