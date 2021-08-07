@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 使用bootstrap完成RWD -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- 使用 LightBox 為網站中的圖片加上燈箱效果：https://www.namepluto.com/2617/-->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style-lab.css">
+    <title>Yingyu-Chen</title>
+</head>
+
+<body>
+    <!-- 導航欄（bootstrap導航條：https://codertw.com/前端開發/272840/） -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- 漢堡選單 -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- 點擊左上角姓名logo可回頂部 -->
+                <a class="navbar-brand wow bounceInDown" href="./index.html">YING-YU CHEN</a>
+            </div>
+            <!-- 導航欄內容 -->
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="wow bounceInDown">Research</a></li>
+                    <li><a href="#" id="backToTop" class="wow bounceInDown">Lab</a></li>
+                    <li><a href="#" class="wow bounceInDown">Publications</a></li>
+                    <li><a href="#" class="wow bounceInDown">Teaching</a></li>
+                    <li><a href="#" class="wow bounceInDown">CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container del-col-pad">
+        <div class="col-lg-12 col-md-12 col-ms-12 col-xs-12">
+
+            <!-- Introduction -->
+            <div class="row" id="Team">
+
+                <!-- logo -->
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-ms-12 col-xs-12">
+                    <div data-wow-delay=".3s" class="wow bounceInDown col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-ms-6 col-ms-offset-3  col-xs-6 col-xs-offset-3">
+                        <img src="./images/lablogo.png" class=" img-responsive center-block" alt="">
+                    </div>
+                </div>
+
+                <!-- 圖片輪播 -->
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-ms-12 col-xs-12">
+
+                    <!-- Bootstrap3 Carousel：https://dotblogs.com.tw/chichiBlog/2020/11/18/114925 -->
+                    <div id="carousel-example-generic" class="carousel slide wow slideInUp" data-wow-delay=".5s"
+                        data-ride="carousel">
+                        <!-- Indicators 圖片下方的點-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides 圖片區-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <a rel="lightbox" href="./images/labmain1.png" alt="">
+                                    <img src="./images/labmain1.png" alt="labmain1">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a rel="lightbox" href="./images/labmain1.png" alt="">
+                                    <img src="./images/labmain1.png" alt="labmain1">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a rel="lightbox" href="./images/labmain1.png" alt="">
+                                    <img src="./images/labmain1.png" alt="labmain1">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Controls 左右按鈕-->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-ms-12 col-xs-12 wow slideInUp" data-wow-delay="1s">
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur out odit aut fugit, sed quia consequuntur
+                        magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.Nemo enim ipsam voluptatem quia
+                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+                        sequi nesciunt. Neque porro quisquam est. (Lab)*B)</p>
+                </div>
+            </div>
+
+            <!-- Members -->
+            <div class="row" id="Members">
+                <div class="col-lg-12 col-md-12 col-ms-12 col-xs-12">
+                    <div class="title wow slideInLeft">Members</div>
+
+                    <div class="list-box row">
+                        <div class="item col-lg-6 col-md-6  col-ms-12 col-xs-12 wow slideInLeft">
+                            <div class=" col-lg-3 col-md-3  col-ms-3 col-xs-3 noPadR noPadL">
+                                <a rel="lightbox" href="./images/member1.png" alt="">
+                                    <img src="./images/member1.png" class="img-responsive center-block" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-9  col-ms-9 col-xs-9 noPadR">
+                                <p class="name">Name</p>
+                                <p class="intro">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit aut
+                                    fugit,
+                                    sed quia consequuntur
+                                    magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt.</p>
+                            </div>
+                        </div>
+
+                        <div class="item col-lg-6 col-md-6  col-ms-12 col-xs-12 wow slideInRight">
+                            <div class=" col-lg-3 col-md-3  col-ms-3 col-xs-3 noPadR noPadL">
+                                <a rel="lightbox" href="./images/member2.png" alt="">
+                                    <img src="./images/member2.png" class="img-responsive center-block" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-9  col-ms-9 col-xs-9 noPadR">
+                                <p class="name">Name</p>
+                                <p class="intro">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit aut
+                                    fugit,
+                                    sed quia consequuntur
+                                    magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt.</p>
+                            </div>
+                        </div>
+
+                        <div class="item col-lg-6 col-md-6  col-ms-12 col-xs-12 wow slideInLeft" data-wow-delay=".2s">
+                            <div class=" col-lg-3 col-md-3  col-ms-3 col-xs-3 noPadR noPadL">
+                                <a rel="lightbox" href="./images/member3.png" alt="">
+                                    <img src="./images/member3.png" class="img-responsive center-block" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-9  col-ms-9 col-xs-9 noPadR">
+                                <p class="name">Name</p>
+                                <p class="intro">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit aut
+                                    fugit,
+                                    sed quia consequuntur
+                                    magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt.</p>
+                            </div>
+                        </div>
+                        <div class="item col-lg-6 col-md-6  col-ms-12 col-xs-12 wow slideInRight" data-wow-delay=".2s">
+                            <div class=" col-lg-3 col-md-3  col-ms-3 col-xs-3 noPadR noPadL">
+                                <a rel="lightbox" href="./images/member4.png" alt="">
+                                    <img src="./images/member4.png" class="img-responsive center-block" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-9  col-ms-9 col-xs-9 noPadR">
+                                <p class="name">Name</p>
+                                <p class="intro">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit aut
+                                    fugit,
+                                    sed quia consequuntur
+                                    magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt.</p>
+                            </div>
+                        </div>
+                        <div class="item col-lg-6 col-md-6  col-ms-12 col-xs-12 wow slideInLeft" data-wow-delay=".5s">
+                            <div class=" col-lg-3 col-md-3  col-ms-3 col-xs-3 noPadR noPadL">
+                                <a rel="lightbox" href="./images/member5.png" alt="">
+                                    <img src="./images/member5.png" class="img-responsive center-block" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-9  col-ms-9 col-xs-9 noPadR">
+                                <p class="name">Name</p>
+                                <p class="intro">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit aut
+                                    fugit,
+                                    sed quia consequuntur
+                                    magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt.</p>
+                            </div>
+                        </div>
+                        <div class="item col-lg-6 col-md-6  col-ms-12 col-xs-12 wow slideInRight" data-wow-delay=".5s">
+                            <div class=" col-lg-3 col-md-3  col-ms-3 col-xs-3 noPadR noPadL">
+                                <a rel="lightbox" href="./images/member6.png" alt="">
+                                    <img src="./images/member6.png" class="img-responsive center-block" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-9  col-ms-9 col-xs-9 noPadR">
+                                <p class="name">Name</p>
+                                <p class="intro">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit aut
+                                    fugit,
+                                    sed quia consequuntur
+                                    magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Equipment -->
+            <div class="row" id="Equipment">
+                <div class="col-lg-12 col-md-12 col-ms-12 col-xs-12">
+                    <div class="title wow slideInLeft" data-wow-delay="1s">Our Equipment</div>
+                    <div class="list col-lg-12 col-md-12 col-ms-12 col-xs-12 noPadR noPadL">
+                        <div class="item col-lg-3 col-md-3 col-ms-12 col-xs-12 wow slideInUp">
+                            <a rel="lightbox" href="./images/equip1.png" alt="">
+                                <img src="./images/equip1.png" class="img-responsive center-block" alt="">
+                            </a>
+                        </div>
+                        <div class="item col-lg-3 col-md-3 col-ms-12 col-xs-12 wow slideInUp" data-wow-delay=".2s">
+                            <a rel="lightbox" href="./images/equip2.png" alt="">
+                                <img src="./images/equip2.png" class="img-responsive center-block" alt="">
+                            </a>
+                        </div>
+                        <div class="item col-lg-3 col-md-3 col-ms-12 col-xs-12 wow slideInUp" data-wow-delay=".4s">
+                            <a rel="lightbox" href="./images/equip3.png" alt="">
+                                <img src="./images/equip3.png" class="img-responsive center-block" alt="">
+                            </a>
+                        </div>
+                        <div class="item col-lg-3 col-md-3 col-ms-12 col-xs-12 wow slideInUp" data-wow-delay=".6s">
+                            <a rel="lightbox" href="./images/equip4.png" alt="">
+                                <img src="./images/equip4.png" class="img-responsive center-block" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-ms-12 col-xs-12 noPadR noPadL wow slideInUp"
+                        data-wow-delay="1s">
+
+                        <p>
+                            Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur
+                            magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Neque porro quisquam est.Nemo enim ipsam
+                            voluptatem quia voluptas sit aspernatur aut odit aut
+                            fugit, sed quia consequuntur magni dolores eos qui
+                            ratione voluptatem sequi nesciunt. Neque porro
+                            quisquam est. (8818)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Location -->
+            <div class="row" id="Location">
+                <div class="title wow slideInUp" data-wow-delay=".05s">Location
+                </div>
+                <div class="col-lg-12 col-md-12 col-ms-12 col-xs-12 noPadR noPadL map-container">
+
+                    <!-- google地图 -->
+                    <div class="col-lg-7 col-md-8 col-ms-12 col-xs-12 noPadR noPadL wow slideInUp" data-wow-delay=".1s">
+                        <iframe id="map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18021.06150417058!2d121.02765042859546!3d24.81044336658799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346836f80b8a39b9%3A0x4fc2c9464b6e0745!2sSix%20campuses%20of%20Jiaotong%20University!5e0!3m2!1sen!2stw!4v1628341444695!5m2!1sen!2stw"
+                            width="100%" style="border:0; " allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="col-lg-5 col-md-4 col-ms-12 col-xs-12 noPadR noPadL map-text">
+                        <p class="wow slideInUp">
+                            <img src="./images/map.png" width="20px" height="20px" alt="">
+                            <p class=" wow slideInUp" data-wow-delay=".2s">
+                                <a class="link" href="https://goo.gl/maps/DbjwV2RtQZT7vrTq9" target="_blank">University
+                                    No.1, Sec. 1, Liujia, 5th Rd., Zhubei City, Hsinchu County 302, Taiwan (R.O.C.)</a>
+                            </p>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p class="wow slideInUp" data-wow-delay=".05s">University No.I, Sec. 1, Liujia 5th Rd, Zhubei City, Hsinchu
+            County 302, Taiwan (R.O.C.)</p>
+        <p class="wow slideInUp" data-wow-delay=".1s">2021 by The Everyday Creativity Lab. </p>
+    </footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/lightbox.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+
+    <script>
+        $(function () {
+
+            // 重新載入視窗時回到頂部
+            $('html,body').animate({
+                scrollTop: 0
+            }, 0);
+
+            // 點擊navbar中的“Lab“緩慢回頂部
+            $('#backToTop').click(function () {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000);
+            })
+
+            if ($(".wow").length) {
+                var wow = new WOW(
+                    {
+                        boxClass: 'wow',      // animated element css class (default is wow)
+                        offset: 20,          // distance to the element when triggering the animation (default is 0)
+                        mobile: false,       // trigger animations on mobile devices (default is true)
+                        live: true,       // act on asynchronously loaded content (default is true)
+                        scrollContainer: null,    // optional scroll container selector, otherwise use window,
+                        resetAnimation: true,     // reset animation on end (default is true)
+                    }
+                );
+                wow.init();
+            }
+        })
+    </script>
+</body>
+
+</html>
