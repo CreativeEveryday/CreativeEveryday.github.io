@@ -1,0 +1,294 @@
+/* 瀏覽器以UTF-8格式讀取css文件 */
+@charset "UTF-8";
+
+/* 導入字體 */
+@font-face {
+  font-family: "JSBold";
+  src: url("../fonts/JosefinSans-Bold.ttf"), url("../fonts/JosefinSans-BoldItalic.ttf"), url("../fonts/JosefinSans-Regular.ttf"), url("../fonts/JosefinSans-Italic.ttf"); 
+}
+@font-face {
+  font-family: "JSLight";
+  src: url("../fonts/JosefinSans-Light.ttf"), url("../fonts/JosefinSans-LightItalic.ttf"), url("../fonts/JosefinSans-Regular.ttf"), url("../fonts/JosefinSans-Italic.ttf"); 
+}
+
+
+.noPadR {
+  padding-right: 0 !important; 
+}
+
+.noPadL {
+  padding-left: 0 !important; 
+}
+
+/* Navigation */
+
+.navbar {
+  padding-top: 5px; 
+}
+
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #fff;
+  color: #40a3c1; 
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #40a3c1;
+  font-family: JSLight;
+  font-size: 18px; 
+}
+
+.navbar-inverse .navbar-brand {
+  color: #40a3c1;
+  font-family: JSBold;
+  font-size: 24px;
+  float: right; 
+}
+
+/* 漢堡選單 */
+.navbar-inverse .navbar-toggle {
+  border: none;
+  float: left; 
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #40a3c1; 
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border: none; 
+}
+
+/* 滑鼠事件 */
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
+  color: #ef7023;
+  background-color: transparent; 
+}
+
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #ef7023;
+  background-color: transparent; 
+}
+
+/* 漢堡選單時添加背景色 */
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #fff; 
+}
+
+/*Introduction*/
+
+#Team {
+  margin-top: 60px;
+  margin-bottom: 60px; 
+}
+  #Team p {
+    font-size: 14px;
+    font-family: JSLight;
+    color: #717070;
+    text-align: center;
+    margin-top: 30px; 
+  }
+
+/*Members*/
+
+#Members {
+  margin-bottom: 60px; 
+}
+  #Members .title {
+    font-size: 24px;
+    font-family: JSBold;
+    color: #40a3c1;
+    text-align: center; 
+  }
+  #Members .list-box {
+    margin-top: 30px; 
+  }
+    #Members .list-box .item {
+      margin-bottom: 30px; 
+    }
+      #Members .list-box .item p {
+        margin: 0;
+        padding: 0; 
+      }
+      #Members .list-box .item .name {
+        margin-top: 10px;
+        font-size: 18px;
+        font-family: JSLight;
+        color: #ef7023; 
+      }
+      #Members .list-box .item .intro {
+        font-size: 14px;
+        font-family: JSLight;
+        color: #717070;
+        margin-top: 5px; 
+      }
+
+/*Equipment*/
+
+#Equipment {
+  margin-bottom: 60px; 
+}
+  #Equipment .list {
+    margin-top: 30px; 
+  }
+  #Equipment .title {
+    font-size: 24px;
+    font-family: JSBold;
+    color: #40a3c1;
+    text-align: center; 
+  }
+  #Equipment image {
+    padding-right: 10px; 
+  }
+  #Equipment .item {
+    padding-left: 0 !important;
+    padding-right: 0 !important; 
+  }
+  #Equipment p {
+    font-size: 14px;
+    font-family: JSLight;
+    color: #717070;
+    text-align: center;
+    margin-top: 30px; 
+  }
+
+/* Location */
+
+#Location {
+  margin: 30px auto 70px; 
+}
+
+#Location .title {
+  color: #40a3c1;
+  font-family: JSBold;
+  font-size: 24px;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px 0 30px; 
+}
+
+#Location .link {
+  font-size: 14px; 
+}
+
+#Location #map {
+  margin-bottom: 30px; 
+}
+
+#Location p {
+  font-size: 18px;
+  font-family: JSLight;
+  color: #717070;
+  text-align: center;
+}
+
+#Location p a {
+  color: #717070; 
+}
+
+/* Footer */
+
+footer {
+  background-color: #40a3c1;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 30px;
+  font-family: JSLight; 
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px; 
+}
+
+.center-vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+.map-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+  .map-container iframe {
+    height: 300px; }
+  .map-container .map-text {
+    margin-top: 30px; 
+  }
+
+/* RWD */
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+  #Equipment .item {
+    padding-left: 6px !important;
+    padding-right: 6px !important; 
+  }
+
+  .map-container {
+    position: relative; 
+  }
+    .map-container iframe {
+      height: 500px; 
+    }
+    .map-container .map-text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      margin-top: 30px; 
+    } 
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+  #Equipment .item {
+    padding-left: 6px !important;
+    padding-right: 6px !important; 
+  }
+
+  .map-container {
+    position: relative; }
+    .map-container iframe {
+      height: 500px; 
+    }
+    .map-container .map-text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      margin-top: 30px; 
+    } 
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+  #Equipment .item {
+    padding-left: 6px !important;
+    padding-right: 6px !important; 
+  }
+
+  .map-container {
+    position: relative; }
+    .map-container iframe {
+      height: 500px; 
+    }
+    .map-container .map-text {
+      position: relative;
+      top: 50%;
+      /*垂直置中*/
+      transform: translateY(-50%);
+      text-align: center;
+      margin-top: 30px; 
+    } 
+}
