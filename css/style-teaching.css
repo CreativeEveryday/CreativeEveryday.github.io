@@ -1,0 +1,236 @@
+/* 瀏覽器以UTF-8格式讀取css文件 */
+@charset "UTF-8"; 
+
+/* 導入字體 */
+@font-face {
+  font-family: "JSBold";
+  src: url("../fonts/JosefinSans-Bold.ttf"), url("../fonts/JosefinSans-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "JSLight";
+  src: url("../fonts/JosefinSans-Light.ttf"), url("../fonts/JosefinSans-LightItalic.ttf")
+}
+@font-face {
+  font-family: "JSRegular";
+  src: url("../fonts/JosefinSans-Regular.ttf"), url("../fonts/JosefinSans-Italic.ttf"); 
+}
+
+/* Navigation */
+
+.navbar {
+  padding-top: 5px; 
+}
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #fff;
+  color: #40a3c1; 
+}
+  .navbar-inverse .navbar-nav > li > a {
+    color: #40a3c1;
+    font-family: JSLight;
+    font-size: 18px; 
+  }
+/* 標題YING-YU CHEN */
+.navbar-inverse .navbar-brand {
+  color: #40a3c1;
+  font-family: JSBold;
+  font-size: 24px; 
+  float: right; 
+}
+/* 漢堡選單 */
+.navbar-inverse .navbar-toggle {
+  border: none; 
+  float: left; 
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #40a3c1; 
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border: none; 
+}
+
+/* 滑鼠事件 */
+
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
+  color: #ef7023;
+  background-color: transparent; 
+}
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #ef7023;
+  background-color: transparent; 
+}
+/* 漢堡選單時添加背景色 */
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #fff; 
+}
+
+/* Course */
+
+.del-col-pad {
+  margin: 0 auto;
+  padding: 0; 
+}
+#Course {
+  margin: 100px auto 40px; 
+}
+  #Course #headerImg {
+    margin-bottom: 30px;
+    padding: 0;
+    margin: 20px 0;  
+  }
+  #Course .mine-name {
+    color: #ef7023;
+    font-family: JSBold;
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 20px 0; 
+  }
+  #Course .intro {
+    font-size: 18px;
+    font-family: JSLight;
+    color: #717070; 
+  }
+#Course2 {
+  margin: 40px auto;
+}
+  #Course2 #headerImg {
+    margin-bottom: 30px;
+    padding: 0;
+    margin: 20px 0;  
+  }
+  #Course2 .mine-name {
+    color: #ef7023;
+    font-family: JSBold;
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 20px 0; 
+  }
+  #Course2 .intro {
+    font-size: 18px;
+    font-family: JSLight;
+    color: #717070; 
+  }
+#Course3 {
+  margin: 40px auto;
+}
+  #Course3 #headerImg {
+    margin-bottom: 30px;
+    padding: 0;
+    margin: 20px 0;  
+  }
+  #Course3 .mine-name {
+    color: #ef7023;
+    font-family: JSBold;
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 20px 0; 
+  }
+  #Course3 .intro {
+    font-size: 18px;
+    font-family: JSLight;
+    color: #717070; 
+  }
+
+
+/* Students' Work */
+
+#Works {
+  margin: 30px auto 70px; 
+}
+  #Works .title {
+    color: #40a3c1;
+    font-family: JSBold;
+    font-size: 24px;
+    text-align: left;
+    padding: 0 20px;
+    margin: 20px 0; 
+  }
+  #Works #workimg {
+    margin-bottom: 30px; 
+  }
+  #Works p {
+    font-size: 18px;
+    font-family: JSLight;
+    color: #717070;
+    text-align: center;
+    margin-top: 20px;
+  }
+    #Works p a {
+      color: #717070; 
+    }
+
+/* Footer */
+
+footer {
+  background-color: #40a3c1;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 30px;
+  font-family: JSLight; 
+}
+  footer p {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px; 
+  }
+
+/* RWD */
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+  #Course .mine-name {
+    text-align: center; 
+  }
+  #Course2 .mine-name {
+    text-align: center; 
+  }
+  #Course3 .mine-name {
+    text-align: center; 
+  }
+
+  #Works p {
+    text-align: left; 
+  } 
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+  #Course .mine-name {
+    text-align: left; 
+  }
+   #Course2 .mine-name {
+    text-align: left; 
+  }
+  #Course3 .mine-name {
+    text-align: left; 
+  }
+
+  #Works p {
+    text-align: left; 
+  } 
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+  #Course .mine-name {
+    text-align: left; 
+  }
+   #Course2 .mine-name {
+    text-align: left; 
+  }
+  #Course3 .mine-name {
+    text-align: left; 
+  }
+
+  #Works p {
+    text-align: left; 
+  } 
+}

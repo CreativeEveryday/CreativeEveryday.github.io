@@ -1,0 +1,232 @@
+/* 瀏覽器以UTF-8格式讀取css文件 */
+@charset "UTF-8";
+
+/* 導入字體 */
+@font-face {
+  font-family: "JSBold";
+  src: url("../fonts/JosefinSans-Bold.ttf"), url("../fonts/JosefinSans-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "JSLight";
+  src: url("../fonts/JosefinSans-Light.ttf"), url("../fonts/JosefinSans-LightItalic.ttf")
+}
+@font-face {
+  font-family: "JSRegular";
+  src: url("../fonts/JosefinSans-Regular.ttf"), url("../fonts/JosefinSans-Italic.ttf"); 
+}
+
+
+.noPadR {
+  padding-right: 0 !important; 
+}
+
+.noPadL {
+  padding-left: 0 !important; 
+}
+
+/* Navigation */
+
+.navbar {
+  padding-top: 5px; 
+}
+
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #fff;
+  color: #40a3c1; 
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #40a3c1;
+  font-family: JSLight;
+  font-size: 18px; 
+}
+
+.navbar-inverse .navbar-brand {
+  color: #40a3c1;
+  font-family: JSBold;
+  font-size: 24px;
+  float: right; 
+}
+
+/* 漢堡選單 */
+.navbar-inverse .navbar-toggle {
+  border: none;
+  float: left; 
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #40a3c1; 
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border: none; 
+}
+
+/* 滑鼠事件 */
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
+  color: #ef7023;
+  background-color: transparent; 
+}
+
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #ef7023;
+  background-color: transparent; 
+}
+
+/* 漢堡選單時添加背景色 */
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #fff; 
+}
+
+/* Pictures */
+
+#Pictures {
+  margin-top: 100px;
+  margin-bottom: 60px; 
+}
+  #Pictures .list {
+    margin-top: 30px; 
+  }
+  #Pictures image {
+    padding-right: 10px; 
+  }
+  #Pictures .item {
+    padding-left: 0 !important;
+    padding-right: 0 !important; 
+  }
+
+/* Introduction */
+
+.del-col-pad {
+  margin: 0 auto;
+  padding: 0; 
+}
+#Project {
+  margin: 100px auto 40px; 
+}
+  #Project .research-name {
+    color: #ef7023;
+    font-family: JSBold;
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 0 0 20px; 
+  }
+  #Project .intro {
+    font-size: 18px;
+    font-family: JSLight;
+    color: #717070; 
+  }
+#Project2 {
+  margin: 40px auto; 
+}
+  #Project2 .research-name {
+    color: #ef7023;
+    font-family: JSBold;
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 0 0 20px; 
+  }
+  #Project2 .intro {
+    font-size: 18px;
+    font-family: JSLight;
+    color: #717070; 
+  }
+#Project3 {
+  margin: 40px auto; 
+}
+  #Project3 .research-name {
+    color: #ef7023;
+    font-family: JSBold;
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 0 0 20px; 
+  }
+  #Project3 .intro {
+    font-size: 18px;
+    font-family: JSLight;
+    color: #717070; 
+  }
+#Project4 {
+  margin: 40px auto 100px; 
+}
+  #Project4 .research-name {
+    color: #ef7023;
+    font-family: JSBold;
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 0 0 20px; 
+  }
+  #Project4 .intro {
+    font-size: 18px;
+    font-family: JSLight;
+    color: #717070; 
+  }
+
+
+/* Footer */
+
+footer {
+  background-color: #40a3c1;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 30px;
+  font-family: JSLight; 
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px; 
+}
+
+.center-vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+.map-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+  .map-container iframe {
+    height: 300px; }
+  .map-container .map-text {
+    margin-top: 30px; 
+  }
+
+/* RWD */
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+  #Pictures .item {
+    padding-left: 6px !important;
+    padding-right: 6px !important; 
+  }
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+  #Pictures .item {
+    padding-left: 6px !important;
+    padding-right: 6px !important; 
+  }
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+  #Pictures .item {
+    padding-left: 6px !important;
+    padding-right: 6px !important; 
+  }
