@@ -4,11 +4,15 @@
 /* 導入字體 */
 @font-face {
   font-family: "JSBold";
-  src: url("../fonts/JosefinSans-Bold.ttf"), url("../fonts/JosefinSans-BoldItalic.ttf"), url("../fonts/JosefinSans-Regular.ttf"), url("../fonts/JosefinSans-Italic.ttf"); 
+  src: url("../fonts/JosefinSans-Bold.ttf"), url("../fonts/JosefinSans-BoldItalic.ttf");
 }
 @font-face {
   font-family: "JSLight";
-  src: url("../fonts/JosefinSans-Light.ttf"), url("../fonts/JosefinSans-LightItalic.ttf"), url("../fonts/JosefinSans-Regular.ttf"), url("../fonts/JosefinSans-Italic.ttf"); 
+  src: url("../fonts/JosefinSans-Light.ttf"), url("../fonts/JosefinSans-LightItalic.ttf")
+}
+@font-face {
+  font-family: "JSRegular";
+  src: url("../fonts/JosefinSans-Regular.ttf"), url("../fonts/JosefinSans-Italic.ttf"); 
 }
 
 
